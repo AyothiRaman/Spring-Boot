@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang ="en" xmls:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Tab</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<form action ="#" th:action="@{/}" method ="GET">
+
+
+
+   
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link " id="home-tab" data-toggle="tab" th:href="@{/wel}" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" th:href="@{/student}" role="tab" aria-controls="profile" aria-selected="true">Student</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" th:href="@{/course}" role="tab" aria-controls="contact" aria-selected="true">Course</a>
+  </li>
+</ul>
+        
+</body>
+</html>

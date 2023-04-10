@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang ="en" xmls:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student Registration</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+ <div  class="container">
+
+
+           <h1> Course List</h1>
+          
+          
+           <a th:href="@{/selectcourse}"  class="btn btn-dark">Add course  </a>
+           <a th:href="@{/}"  class="btn btn-dark"> Back </a>
+         <table border="1" class="table table-striped">
+        
+         <tr>
+      
+         <th> courseCode</th>
+         <th> courseName </th>
+         <th> Select </th>
+        
+         </tr>
+        
+         
+     <tr th:each ="course :${CourseList}">
+     <td th:text ="${course.courseCode}"></td>
+     <td th:text ="${course.courseName}"></td>
+      <td> <a th:href="@{/bookdata}"  class="btn btn-dark"> Book </a></td>
+
+     </tr>
+         
+         </table>
+         </div>
+</body>
+</html>

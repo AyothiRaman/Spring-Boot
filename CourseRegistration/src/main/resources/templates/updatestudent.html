@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+ <a th:href="@{/student}"  class="btn btn-dark"> Back </a>
+<form action ="#" th:action="@{/SaveStudent}" method ="POST" th:object="${student}">
+
+
+ <input type="hidden" th:field="*{id}"/>
+   <input type ="text" th:field="*{userId}" placeholder="Enter the user ID"></input>
+     <input type ="text" th:field="*{studentCode}" placeholder="Enter the Student Code"></input>
+   <input type ="text" th:field="*{firstName}" placeholder="Enter the First Name"></input>
+      <input type ="text" th:field="*{lastName}" placeholder="Enter the Last Name"></input> 
+        <input type ="text" th:field="*{emailId}" placeholder="Enter the Email"></input> 
+         <input type ="text" th:field="*{phoneNumber}" placeholder="Enter the Phone Number"></input> 
+         <input type="Submit"></input>
+        
+       </form>
+</body>
+</html>

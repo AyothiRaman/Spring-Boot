@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang ="en" xmls:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student List</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+ <a th:href="@{/student}"  class="btn btn-dark"> Back </a>
+
+<form action ="#" th:action="@{/SaveStudent}" method ="POST" th:object="${student}">
+   <input type ="text" th:field="*{userId}" placeholder="Enter the user ID"></input>
+     <input type ="text" th:field="*{studentCode}" placeholder="Enter the Student Code"></input>
+   <input type ="text" th:field="*{firstName}" placeholder="Enter the First Name"></input>
+      <input type ="text" th:field="*{lastName}" placeholder="Enter the Last Name"></input> 
+        <input type ="text" th:field="*{emailId}" placeholder="Enter the Email"></input> 
+         <input type ="text" th:field="*{phoneNumber}" placeholder="Enter the Phone Number"></input> 
+         <input type="Submit"></input>
+        
+       </form>
+</body>
+</html>

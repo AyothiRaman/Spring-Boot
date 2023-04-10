@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang ="en" xmls:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Course Booking</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<form action ="#" th:action="@{/saveCourse}" method ="POST" th:object="${bookcourse}">
+<h2> Enter your Booking Details</h2>
+
+
+ <a th:href="@{/course}"  class="btn btn-dark"> Back </a>
+
+        <input type ="text" th:field="*{studentId}" placeholder="Enter StudentId"></input> 
+           <input type ="text" th:field="*{courseId}" placeholder="Enter CourseId"></input> 
+                 <input type ="text" th:field="*{courseName}" placeholder="Enter CourseName"></input> 
+        
+         <input type="Submit"></input>
+</form>
+</body>
+</html>

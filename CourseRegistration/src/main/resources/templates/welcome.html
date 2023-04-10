@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang ="en" xmls:th="http://thymeleaf.org">
+<head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+<meta charset="UTF-8">
+<title>Welcome home</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<form action ="#" th:action="@{/wel}" method ="GET" th:object="${student}">
+<a th:href="@{/}"  class="btn btn-dark"> Back </a>
+<h1>Welcome Admin</h1>
+ 
+ <div sec:authorize="hasAnyAuthority('STUDENT')"> welcome student
+ <span th:text="${#authentication.getprincipal().getuserName())}"></span>
+ </div>
+ 
+ <br>
+ 
+ <div  sec:authorize="hasAnyAuthority('STUDENT')"> welcome Admin
+  <span th:text="${#authentication.getprincipal().getuserName())}"></span>
+ </div>
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang ="en" xmls:th="http://thymeleaf.org">
+<head>
+
+<meta charset="UTF-8">
+<title>Booked details</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+
+<a th:href="@{/course}"  class="btn btn-dark"> Back </a>
+<form action ="#" th:action="@{/find}" method ="GET" th:object="${bookcourse}">
+
+   
+         <table border="1" class="table table-striped">
+  
+
+ 
+   <tr>
+      
+         <th> studentId</th>
+           <th> courseId</th>
+         <th> courseName </th>
+           <th> bookingTime</th>
+       
+         </tr>
+         
+     <tr th:each ="booked :${BookedList}">
+          <td th:text ="${booked.studentId}"></td>
+           <td th:text ="${booked.courseId}"></td>
+            <td th:text ="${booked.courseName}"></td>
+            <td th:text ="${booked.bookingTime}"></td>
+            </tr>
+      </table>
+      </form>      
+</body>
+</html>

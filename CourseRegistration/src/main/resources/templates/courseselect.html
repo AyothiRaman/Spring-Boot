@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang ="en" xmls:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Selected Course</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+ <a th:href="@{/course}"  class="btn btn-dark"> Back </a>
+ <form action ="#" th:action="@{/savedata}" method ="POST" th:object="${course}">
+       <input type ="text" th:field="*{courseCode}" placeholder="Enter coursecode"></input> 
+        <input type ="text" th:field="*{courseName}" placeholder="Enter the coursename"></input> 
+         <input type="Submit"></input>
+</form>
+</body>
+</html>
