@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../jar/stax2-api-4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/stax-ex-1.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/javax.activation-1.0.3.3-jre13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/jakarta.xml.bind-api-1.0.3.3-jre13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/jakarta.validation-api-1.0.3.3-jre13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/jakarta.activation-1.0.3.3-jre13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/commons-math3-1.0.3.3-jre13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/commons-logging-1.0.3.3-jre13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/commons-collections4-1.0.3.3-jre13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/commons-codec-1.0.3.3-jre13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jar/apache-poi-1.0.3.3-jre13.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../jar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../jar" recursive="false" />
+  </library>
+</component>
